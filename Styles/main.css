@@ -137,6 +137,10 @@ header:hover main{
   left: 0;
   bottom: 0;
   top:0;
+  transition-duration: 1s;
+  transition-property: left, border-radius, background-color;
+  transition-delay: 3s, 4s, 4s;
+
 }
 .cuatro nav{
   position: absolute;
@@ -146,6 +150,19 @@ header:hover main{
   bottom: 0;
   right:0;
   margin: auto;
+  transition-duration: 1s;
+  transition-property: right, border-radius, background-color;
+  transition-delay: 3s, 4s, 4s;
+}
+.cuatro:hover>nav{
+  right: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.cuatro:hover>article{
+  left: 20px;
+  border-radius: 50%;
+  background-color: yellow;
 }
 
 /* QUINTA */
@@ -166,19 +183,22 @@ header:hover main{
 .cinco:hover{
   height: 240px;
 }
-.cinco div:first-child{
+.cinco div:nth-child(1){
   position: absolute;
+  background-color: #f78fb3;
   width: 40px;
   height: 40px;
-  background-color: rgb(253, 201, 209);
   top:0;
   bottom: 0;
   right:0;
   margin: 0 auto;
+  transition-duration: 1s;
+  transition-property: right,top,border-radius;
+  transition-delay: 1s ,1s ,2s,3s;
 }
 .cinco div:nth-child(2){
   position: absolute;
-  background-color: rgb(253, 201, 209);
+  background-color: #f78fb3;
   width: 40px;
   height: 40px;
   left:0;
@@ -186,16 +206,36 @@ header:hover main{
   right:0;
   top: 0;
   margin: auto;
+  transition-duration: 1s;
+  transition-property: border-radius,background-color;
+  transition-delay: 3s ,4s;
 }
 .cinco div:nth-child(3){
   position: absolute;
-  background-color: rgb(253, 201, 209);
+  background-color: #f78fb3;
   width: 40px;
   height: 40px;
   left:0;
   bottom: 0;
   margin: auto;
+  transition-duration: 1s;
+  transition-property: left,bottom,border-radius;
+  transition-delay: 1s ,1s ,2s,3s;
 }
+.cinco:hover div:nth-child(1){
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  }
+.cinco:hover div:nth-child(2){
+  border-radius: 50%;
+  background-color: white;
+  }
+.cinco:hover div:nth-child(3){
+  left: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  }
 
 /* SEXTA */
 .seis{
@@ -208,10 +248,10 @@ header:hover main{
   bottom: 0;
   margin: auto;
   background-color: springgreen;
-  transition: 2s;
-  transition-duration: 2s;
-  transition-property: border-top, border-right,border-bottom,border-left;
-  transition-delay: 0s, 1s, 2s, 3s;
+  transition-duration: 1s;
+  transition-property: height,width,border-top, border-right,border-bottom,border-left;
+  transition-delay: 0s,0s,1s, 2s, 3s, 4s;
+  box-sizing: border-box;
 }
 .seis:hover{
   height: 240px;
@@ -221,15 +261,16 @@ header:hover main{
   border-bottom:  solid 4px blueviolet;
   border-right: solid 4px  darkred;
 }
-.seis div:first-child{
+.seis div:nth-child(1){
   position: absolute;
   width: 40px;
   height: 40px;
   background-color: seagreen;
-  right:0;
- left: 0;
- bottom: 0;
- top:0;
+  left: 0;
+  top:0;
+  transition-duration: 1s;
+  transition-property: left,top,border-radius;
+  transition-delay: 5s ,5s ,6s;
 }
 .seis div:nth-child(2){
   position: absolute;
@@ -240,6 +281,9 @@ header:hover main{
   bottom: 0;
   right:0;
   margin: 0 auto;
+  transition-duration: 1s;
+  transition-property: right,top,border-radius;
+  transition-delay: 7s ,7s ,8s;
 }
 .seis div:nth-child(3){
   position: absolute;
@@ -251,6 +295,9 @@ header:hover main{
   right:0;
   top: 0;
   margin: auto;
+  transition-duration: 2s;
+  transition-property: border-radius,background-color;
+  transition-delay: 13s,14s;
 }
 .seis div:nth-child(4){
   position: absolute;
@@ -260,6 +307,9 @@ header:hover main{
   left:0;
   bottom: 0;
   margin: auto;
+  transition-duration: 1s;
+  transition-property: left,bottom,border-radius;
+  transition-delay: 9s ,9s ,10s;
 }
 .seis div:nth-child(5){
   position: absolute;
@@ -269,4 +319,31 @@ header:hover main{
   bottom: 0;
   right:0;
   margin: auto;
+  transition-duration: 1s;
+  transition-property: right,bottom,border-radius;
+  transition-delay: 11s ,11s ,12s;
 }
+.seis:hover>div:nth-child(1){
+  left: 20px;
+  top: 20px;
+  border-radius: 50%;
+  }
+.seis:hover>div:nth-child(2){
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  }
+  .seis:hover>div:nth-child(3){
+  border-radius: 50%;
+  background-color: aquamarine;
+  }
+.seis:hover>div:nth-child(4){
+  left: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  }
+.seis:hover>div:nth-child(5){
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  }
